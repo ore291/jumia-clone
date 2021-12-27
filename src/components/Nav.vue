@@ -1,12 +1,12 @@
 <template>
   <nav
-    class=" md:h-20 bg-white md:shadow-md flex flex-wrap  md:flex-nowrap items-center justify-between px-2 pt-2 md:pt-0 md:p-0"
+    class=" sm:h-20 bg-white sm:shadow-sm flex flex-wrap  sm:flex-nowrap items-center justify-between px-2 pt-2 sm:pt-0 sm:p-0"
   >
-    <div class="logo w-2/12 ml-2 mr-48 py-2 md:py-0 md:mr-0 md:ml-24 flex items-center justify-between md:justify-start">
+    <div class="logo w-2/12 ml-2 mr-48 py-2 sm:py-0 sm:mr-0 sm:ml-24 flex items-center justify-between sm:justify-start">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mr-4 md:hidden"
+          class="h-6 w-6 mr-4 sm:hidden"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -20,11 +20,11 @@
         </svg>
       </div>
       <img
-        class="object-contain w-28 md:w-32 h-12 cursor-pointer max-w-md"
+        class="object-contain w-28 sm:w-32 h-12 cursor-pointer max-w-md"
         src="../assets/jumia-seeklogo.com.svg"
         alt=""
       />
-      <div class="icons md:hidden flex ml-28">
+      <div class="icons sm:hidden flex ml-28">
       <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-8 mr-4 stroke-1"
@@ -57,11 +57,11 @@
     </div>
     
     <div
-      class="w-5/12 h-9 md:h-10 border border-gray-400 sm:rounded-md rounded-full flex items-center grow  mx-0.75 py-1 px-2 flex-row md:mr-1"
+      class="w-5/12 h-9 sm:h-10 border border-gray-400 sm:rounded-sm rounded-full flex items-center grow  mx-0.75 py-1 px-2 flex-row sm:mr-1"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 md:text-gray-500 text-gray-900 mr-2"
+        class="h-6 w-6 sm:text-gray-500 text-gray-900 mr-2"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -74,20 +74,20 @@
         />
       </svg>
       <input
-        class="focus:outline-none w-full text-sm md:text-lg"
+        class="focus:outline-none w-full text-sm sm:text-lg"
         placeholder="Search products, brands and categories"
         type="text"
       />
     </div>
-    <div class="w-1/12 hidden md:block">
+    <div class="w-1/12 hidden sm:block">
       <button
         type="button"
-        class="px-4 py-2.5 bg-orng text-white font-medium text-sm leading-tight uppercase rounded-md shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-yellow-600 shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
+        class="px-4 py-2.5 bg-orng text-white font-medium text-sm leading-tight uppercase rounded-sm shadow-lg hover:bg-orange-500 hover:shadow-lg focus:bg-yellow-600 shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
       >
         SEARCH
       </button>
     </div>
-    <div class="w-4/12 items-center hidden md:flex">
+    <div class="w-4/12 items-center hidden sm:flex">
       <div class="flex cursor-pointer group items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

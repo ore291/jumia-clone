@@ -983,6 +983,11 @@ vue-tailwind-icons@^0.1.2:
   resolved "https://registry.yarnpkg.com/vue-tailwind-icons/-/vue-tailwind-icons-0.1.2.tgz#69a5c0a143befbc97611e14c829a0efce6e8c57f"
   integrity sha512-Oc7fA/XjMKKz45/FP43AjiKUr9bnKWfbrJqRgrEa0pczQ1SSxRuxtvNFKhj+7Ivh33VBqRxdHVkYbpN2i0TTTg==
 
+vue3-carousel@^0.1.35:
+  version "0.1.35"
+  resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.35.tgz#d5bd5b8e7a4220a6500f9066b8189031dd923942"
+  integrity sha512-a2mfbjRJDk5Pa6Vxt0NJnxZBdI2SZzwWRUr/KEBzk+CZk/bT4uXsY2+bDr/A3JHwGgfZRwTTY/Mt1GlPjIncrw==
+
 vue@^3.2.25:
   version "3.2.26"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.26.tgz#5db575583ecae495c7caa5c12fd590dffcbb763e"
