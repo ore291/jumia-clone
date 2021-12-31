@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "mdue": "^0.1.4",
     "vue": "^3.2.25",
     "vue-tailwind-icons": "^0.1.2",
     "vue3-carousel": "^0.1.35"

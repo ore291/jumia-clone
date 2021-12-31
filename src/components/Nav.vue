@@ -1,6 +1,6 @@
 <template>
   <nav
-    class=" sm:h-20 bg-white sm:shadow-sm flex flex-wrap  sm:flex-nowrap items-center justify-between px-2 pt-2 sm:pt-0 sm:p-0"
+    class=" sm:h-20 pb-2 sm:pb-0 bg-white sm:shadow-sm flex flex-wrap  sm:flex-nowrap items-center justify-between px-2 pt-2 sm:pt-0 sm:p-0"
   >
     <div class="logo w-2/12 ml-2 mr-48 py-2 sm:py-0 sm:mr-0 sm:ml-24 flex items-center justify-between sm:justify-start">
       <div>
@@ -74,7 +74,7 @@
         />
       </svg>
       <input
-        class="focus:outline-none w-full text-sm sm:text-lg"
+        class="focus:outline-none w-full text-sm sm:text-lg "
         placeholder="Search products, brands and categories"
         type="text"
       />

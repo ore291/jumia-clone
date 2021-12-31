@@ -1,14 +1,18 @@
 <template>
   <div>
-      <Flyout/>
+      <main class="">
+        <Flyout/>
+        
+      </main >
   </div>
 </template>
 
 <script>
 import Flyout from './Flyout.vue'
+import { Cart , BullseyeArrow} from 'mdue';
 export default {
   components: {
-    Flyout
+    Flyout,Cart,BullseyeArrow
   }
 }
 </script>
