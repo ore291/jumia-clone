@@ -7,7 +7,7 @@ import Main from './components/Main.vue'
 </script>
 
 <template>
-    <div class='h-screen bg-neutral-100'>
+    <div class='bg-neutral-100'>
          <Header />
          <Main  />
     </div>

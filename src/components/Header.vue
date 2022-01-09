@@ -10,8 +10,8 @@ import Nav from './Nav.vue'
 </script>
 
 <template>
-  <div >
-    <div class="hidden md:block">
+  <div class="bg-neutral-100" >
+    <div class="hidden md:block ">
       <div class="relative w-full my-0 bg-orng">
       <img
         class="mx-auto mt-0 h-full"
@@ -46,7 +46,7 @@ import Nav from './Nav.vue'
     </div>
     </div>
     <Nav />
-  </div>
+  </div >
 </template>
 
 <style scoped>

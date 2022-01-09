@@ -74,7 +74,7 @@
         />
       </svg>
       <input
-        class="focus:outline-none w-full text-sm sm:text-lg "
+        class="focus:outline-none w-full text-sm sm:text-lg placeholder-gray-500 placeholder:text-sm"
         placeholder="Search products, brands and categories"
         type="text"
       />
@@ -82,7 +82,7 @@
     <div class="w-1/12 hidden sm:block">
       <button
         type="button"
-        class="px-4 py-2.5 bg-orng text-white font-medium text-sm leading-tight uppercase rounded-sm shadow-lg hover:bg-orange-500 hover:shadow-lg focus:bg-yellow-600 shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
+        class="px-4 py-2.5 bg-orng text-white font-medium text-sm leading-tight uppercase rounded-sm shadow-lg hover:bg-orange-500 hover:shadow-lg focus:bg-yellow-600 focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
       >
         SEARCH
       </button>
