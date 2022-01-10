@@ -266,9 +266,6 @@ export default {
   align-items: center;
 }
 
-/* .carousel__slide {
-  padding: 10px;
-} */
 
 .carousel__prev,
 .carousel__next {

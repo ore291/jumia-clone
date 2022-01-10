@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
 import supabase from 'vue-3-supabase'
+import store from './store/'
  
 
  
@@ -16,6 +17,8 @@ app.use(supabase, {
     supabaseUrl : import.meta.env.VITE_SUPABASE_URL,
   supabaseKey : import.meta.env.VITE_SUPABASE_KEY
 })
+
+app.use(store)
 
 // Use supabase
 // app.use(supabase, {
