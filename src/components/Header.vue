@@ -39,7 +39,7 @@ import Nav from './Nav.vue'
           <img class="h-4" src="../assets/jumia-seeklogo.com.svg" alt="" />
         </div>
         <div class="cursor-pointer">
-          <img src="../assets/headerlinks.PNG" alt="">
+          <img src="../assets/headerlinks.png" alt="">
         </div>
       </div>
       <div class="basis-2/12 justify-end"></div>
