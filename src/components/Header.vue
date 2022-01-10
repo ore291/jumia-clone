@@ -25,7 +25,7 @@ import Nav from './Nav.vue'
       <div
         class="basis-2/12 justify-center flex flex-wrap  items-center"
       >
-        <img class="h-4 mr-1" src="../assets/Asset 1.svg" alt="" />
+        <img class="h-4 mr-1" src="../assets/Asset-1.svg" alt="" />
         <a
           href="#"
           class="text-[#f68b1e] bg-transparent font-medium hover:underline"
