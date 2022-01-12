@@ -1,11 +1,11 @@
 <template>
   <div
-    class="bg-white sm:my-2 rounded cursor-pointer p-2"
+    class="bg-white sm:my-2 rounded cursor-pointer sm:p-2"
   >
     <div class="flex items-center justify-center sm:h-[50px]  w-full bg-lightPurpBg  rounded-t">
       <p class="text-xl font-medium text-text">Collections</p >
     </div>
-    <div class="grid grid-cols-4 sm:grid-cols-6 grid-rows-2 items-center place-content-center sm:gap-1 sm:my-2">
+    <div class="grid grid-cols-4 sm:grid-cols-6 grid-rows-2  place-items-center sm:gap-1 sm:my-2">
         <div class="flex flex-col items-center justify-center transform transition duration-[50ms] hover:scale-[1.02] hover:shadow-xl">
             <img src="../assets/connect-your-world_260x144.png" alt="">
             <p class="text-xs sm:text-sm text-truncate... sm:py-2">Connect your World</p >
