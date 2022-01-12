@@ -4,6 +4,7 @@
 // class="flex-1 overflow-y-auto"
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue"
 </script>
 
 <script>
@@ -18,6 +19,7 @@ export default {
   <div class="bg-neutral-100">
     <Header />
     <Main />
+    <Footer />
   </div>
 </template>
 

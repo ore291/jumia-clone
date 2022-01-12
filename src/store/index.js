@@ -20,7 +20,6 @@ const store = createStore({
          let { data } = await useSupabase()
       .from("products")
       .select("*");
-      console.log(data)
       context.commit('setProducts', data)
       } catch (error) {
         console.log(error)

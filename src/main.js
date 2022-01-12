@@ -3,6 +3,8 @@ import App from './App.vue'
 import './index.css'
 import supabase from 'vue-3-supabase'
 import store from './store/'
+import 'tw-elements';
+
  
 
  

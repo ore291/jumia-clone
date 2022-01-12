@@ -32,6 +32,7 @@ import ProductsSlider from "./ProductsSlider.vue";
 import Cards from "./Cards.vue";
 import Collections from "./Collections.vue";
 
+
 export default {
   // async mounted() {
   //   let { data: products, error } = await this.$supabase
@@ -56,6 +57,7 @@ export default {
     ProductsSlider,
     Cards,
     Collections,
+ 
   },
   methods: {
     // getImageUrl(img) {
