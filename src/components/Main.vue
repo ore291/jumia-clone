@@ -62,9 +62,9 @@ export default {
     //   const imgUrl = new URL(img, import.meta.url).href;
     //   return imgUrl;
     // },
-   getImageUrl = (name) => {
+   getImageUrl(name){
     const path = name;
-    const modules = import.meta.globEager("/assets/*.png");
+    const modules = import.meta.globEager("../assets/*.png");
     return modules[path].default;
   },
   },
