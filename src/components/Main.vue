@@ -58,8 +58,9 @@ export default {
     Collections,
   },
   methods: {
-    getImageUrl(name) {
-      return new URL(name, import.meta.url).href;
+    getImageUrl(img) {
+      const imgUrl = new URL(img, import.meta.url);
+      return imgUrl;
     },
   },
 };
