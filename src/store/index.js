@@ -16,10 +16,16 @@ const store = createStore({
   },
   actions:{
     async fetchProducts (context) {
-      let { data } = await useSupabase()
+      try {
+         let { data } = await useSupabase()
       .from("products")
       .select("*");
+      console.log(data)
       context.commit('setProducts', data)
+      } catch (error) {
+        console.log(error)
+      }
+     
     },
     
   },
