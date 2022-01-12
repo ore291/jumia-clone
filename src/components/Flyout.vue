@@ -220,7 +220,7 @@ export default {
     //   return imgUrl;
     // },
     getSrc(img){
-    const modules = import.meta.globEager("../assets/*.png");
+    const modules = import.meta.globEager("../assets/*");
     return modules[img].default;
   },
   },
