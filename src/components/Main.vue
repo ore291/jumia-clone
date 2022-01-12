@@ -2,7 +2,7 @@
   <div>
     <main class="sm:px-20">
       <Flyout />
-      <ProductsSlider   title="Top Selling Items"/>
+      <ProductsSlider title="Top Selling Items" />
       <Cards
         :header="true"
         :leftImage="getImageUrl('../assets/oraimo-powerbank_572x250.png')"
@@ -21,7 +21,7 @@
         :leftImage="getImageUrl('../assets/i12-earphones_572x250.png')"
         :rightImage="getImageUrl('../assets/m6-smartwatch_572x250.png')"
       />
-      <ProductsSlider  title="Top Deals"/>
+      <ProductsSlider title="Top Deals" />
     </main>
   </div>
 </template>
@@ -58,10 +58,15 @@ export default {
     Collections,
   },
   methods: {
-    getImageUrl(img) {
-      const imgUrl = new URL(img, import.meta.url);
-      return imgUrl;
-    },
+    // getImageUrl(img) {
+    //   const imgUrl = new URL(img, import.meta.url).href;
+    //   return imgUrl;
+    // },
+   getImageUrl = (name) => {
+    const path = name;
+    const modules = import.meta.globEager("/assets/*.png");
+    return modules[path].default;
+  },
   },
 };
 </script>
