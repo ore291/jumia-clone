@@ -63,9 +63,8 @@ export default {
     //   return imgUrl;
     // },
    getImageUrl(name){
-    const path = name;
     const modules = import.meta.globEager("../assets/*.png");
-    return modules[path].default;
+    return modules[name].default;
   },
   },
 };
