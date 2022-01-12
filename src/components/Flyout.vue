@@ -215,10 +215,14 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 export default {
   name: "App",
   methods: {
-    getSrc(img) {
-      const imgUrl = new URL(img, import.meta.url);
-      return imgUrl;
-    },
+    // getSrc(img) {
+    //   const imgUrl = new URL(img, import.meta.url);
+    //   return imgUrl;
+    // },
+    getSrc(img){
+    const modules = import.meta.globEager("../assets/*.png");
+    return modules[img].default;
+  },
   },
   components: {
     Carousel,
