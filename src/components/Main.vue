@@ -2,7 +2,7 @@
   <div>
     <main class="sm:px-20">
       <Flyout />
-      <ProductsSlider title="Top Selling Items" :latest='true' />
+      <ProductsSlider title="Top Selling Items" :products="randomProducts" :key="1"/>
       <Cards
         :header="true"
         :leftImage="getImageUrl('../assets/oraimo-powerbank_572x250.png')"
@@ -21,7 +21,7 @@
         :leftImage="getImageUrl('../assets/i12-earphones_572x250.png')"
         :rightImage="getImageUrl('../assets/m6-smartwatch_572x250.png')"
       />
-      <ProductsSlider title="Top Deals" />
+      <ProductsSlider title="Top Deals" :products="latestProducts" :key="2"/>
     </main>
   </div>
 </template>
@@ -31,7 +31,7 @@ import Flyout from "./Flyout.vue";
 import ProductsSlider from "./ProductsSlider.vue";
 import Cards from "./Cards.vue";
 import Collections from "./Collections.vue";
-
+import { mapGetters } from 'vuex'
 
 export default {
   // async mounted() {
@@ -49,9 +49,21 @@ export default {
   //   })
   //   console.log(user, session, error)
   // },
-  computed: {
-   
+ computed:{
+    ...mapGetters([
+      'randomProducts',
+      'latestProducts'
+     ,
+      // ...
+    ]),
+    
+    
   },
+data() {
+  return {
+   
+  }
+},
   components: {
     Flyout,
     ProductsSlider,
