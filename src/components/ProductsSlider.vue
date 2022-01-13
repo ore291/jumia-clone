@@ -28,21 +28,24 @@ export default {
   components: {
     Product,
   },
-  data() {
-    return {};
-  },
-  props: ["title"],
-  computed: {
-    randomProducts() {
-      return (
-      this.$store.getters.products &&
-        this.$store.getters.products
-          .sort(() => 0.5 - Math.random())
-          .slice(0, 6))
+
+  // data() {
+  //   return {
+  //     randomProducts: null
+  //   };
+  // },
+  props: ["title", "latest",],
+  computed:{
+    randomProducts(){
+      return this.latest ? this.$store.getters.products.slice(0,6) : this.$store.getters.randproducts
     },
+    
   },
+  methods: {
+    
+  },
+  
 };
 </script>
 
-<style>
-</style>
+<style></style>

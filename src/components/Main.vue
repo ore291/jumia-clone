@@ -2,7 +2,7 @@
   <div>
     <main class="sm:px-20">
       <Flyout />
-      <ProductsSlider title="Top Selling Items" />
+      <ProductsSlider title="Top Selling Items" :latest='true' />
       <Cards
         :header="true"
         :leftImage="getImageUrl('../assets/oraimo-powerbank_572x250.png')"
