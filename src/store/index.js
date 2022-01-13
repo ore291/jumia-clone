@@ -1,6 +1,7 @@
 
 import { createStore } from 'vuex'
-import { useSupabase } from 'vue-3-supabase'
+// import { useSupabase } from 'vue-3-supabase'
+import axios from 'axios'
 
 // Create a new store instance.
 const store = createStore({
@@ -15,15 +16,21 @@ const store = createStore({
     }
   },
   actions:{
-    async fetchProducts (context) {
-      try {
-         let { data } = await useSupabase()
-      .from("products")
-      .select("*");
-      context.commit('setProducts', data)
-      } catch (error) {
-        console.log(error)
-      }
+    async fetchProducts (context) { 
+     try {
+      const res = await axios.get('https://fakestoreapi.com/products/');
+      context.commit('setProducts', res.data);
+     } catch (error) {
+       console.log(error)
+     }
+      // try {
+      //    let { data } = await useSupabase()
+      // .from("products")
+      // .select("*");
+      // context.commit('setProducts', data)
+      // } catch (error) {
+      //   console.log(error)
+      // }
      
     },
     

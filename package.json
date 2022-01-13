@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "mdue": "^0.1.4",
     "tw-elements": "^1.0.0-alpha6",
     "vue": "^3.2.25",
