@@ -5,7 +5,10 @@
 
 @layer components{
   .collectionCard{
-    @apply text-xs sm:text-sm truncate sm:py-2 text-center 
+    @apply flex flex-col items-center justify-center transform transition duration-[50ms] hover:scale-[1.02] hover:shadow-xl h-auto w-auto
+  }
+  .collectionCardText{
+    @apply text-xs sm:text-sm sm:py-2 text-center whitespace-normal
   }
 }
 
