@@ -1,5 +1,5 @@
 <script setup>
-import Nav from './Nav.vue'
+
 // import { ref } from 'vue'
 // hover:bg-green-800 hover:shadow-lg transform transition hover:-translate-y-1
 // defineProps({
@@ -10,7 +10,7 @@ import Nav from './Nav.vue'
 </script>
 
 <template>
-  <div class="bg-neutral-100" >
+  <div class="bg-neutral-100 relative" >
     <div class="hidden md:block ">
       <div class="relative w-full my-0 bg-orng">
       <img
@@ -45,7 +45,6 @@ import Nav from './Nav.vue'
       <div class="basis-2/12 justify-end"></div>
     </div>
     </div>
-    <Nav />
   </div >
 </template>
 

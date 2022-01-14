@@ -2,7 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
 import supabase from 'vue-3-supabase'
-import store from './store/'
+import store from './store/';
+import router from './pages/router.js'
 import 'tw-elements';
 
  
@@ -21,13 +22,9 @@ app.use(supabase, {
 })
 
 app.use(store)
+app.use(router)
 
-// Use supabase
-// app.use(supabase, {
-//   supabaseUrl: import.meta.env.VITE_SUPABASE_URL, // actually you can use something like import.meta.env.VITE_SUPABASE_URL
-//   supabaseKey: import.meta.env.VITE_SUPABASE_KEY, // actually you can use something like import.meta.env.VITE_SUPABASE_KEY,
-//   options: {}
-// })
+
 
 app.mount("#app")
 

@@ -12,6 +12,7 @@
     "tw-elements": "^1.0.0-alpha6",
     "vue": "^3.2.25",
     "vue-3-supabase": "^2.1.3",
+    "vue-router": "4",
     "vue3-carousel": "^0.1.35",
     "vuex": "^4.0.2"
   },

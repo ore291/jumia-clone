@@ -1,9 +1,17 @@
 <template>
-  <div class="mt-3 h-auto border rounded-lg bg-white sm:py-4 sm:px-1">
-    <h1 class="font-medium text-xl mb-2 ml-4">{{ title }}</h1>
+  <div class="mt-3 h-auto border rounded-lg bg-white ">
+    <div class="flex items-center justify-between px-4 sm:h-[50px]  w-full bg-lightPurpBg  rounded-t">
+      <h1 v-html="title" class="font-medium text-xl tracking-wide "></h1>
+      <div class="flex items-center justify-center cursor-pointer">
+        <h1 class="font-medium text-sm">SEE ALL</h1>
+        <ChevronRight class="text-2xl -ml-1  font-normal" />
+      </div >
+      
+    </div >
+    
     <div
       v-if="products"
-      class="grid grid-cols-hsc grid-rows-hsr gap-[10px] sm:grid-cols-6 sm:gap-2 sm:justify-between sm:items-center overflow-x-scroll sm:overflow-hidden grid-flow-col auto-cols-max px-5"
+      class="grid grid-cols-hsc grid-rows-hsr  gap-0.5  sm:grid-cols-6 sm:gap-2 my-2 sm:justify-between sm:items-center overflow-x-scroll sm:overflow-hidden grid-flow-col auto-cols-max px-5"
     >
       <div v-for="product in products" :key="product.id">
         <Product :product="product" />
@@ -23,10 +31,12 @@
 <script>
 import { computed } from "vue";
 import Product from "./Product.vue";
+import {ChevronRight}  from 'mdue'
 
 export default {
   components: {
     Product,
+    ChevronRight
   },
 
   // data() {

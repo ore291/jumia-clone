@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="sm:px-20">
+    <main class="sm:px-20 relative">
       <Flyout />
       <ProductsSlider title="Top Selling Items" :products="randomProducts" :key="1"/>
       <Cards
@@ -21,7 +21,8 @@
         :leftImage="getImageUrl('../assets/i12-earphones_572x250.png')"
         :rightImage="getImageUrl('../assets/m6-smartwatch_572x250.png')"
       />
-      <ProductsSlider title="Top Deals" :products="latestProducts" :key="2"/>
+      <ProductsSlider :title="`Top Deals | <del>&#8358;</del>5,000 Store `" :products="latestProducts" :key="2"/>
+      <Banner />
     </main>
   </div>
 </template>
@@ -32,6 +33,7 @@ import ProductsSlider from "./ProductsSlider.vue";
 import Cards from "./Cards.vue";
 import Collections from "./Collections.vue";
 import { mapGetters } from 'vuex'
+import Banner from './Banner.vue'
 
 export default {
   // async mounted() {
@@ -69,6 +71,7 @@ data() {
     ProductsSlider,
     Cards,
     Collections,
+    Banner
  
   },
   methods: {
