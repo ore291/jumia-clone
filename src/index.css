@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .collectionCard{
+    @apply text-xs sm:text-sm truncate sm:py-2 text-center 
+  }
+}
+
 * {
   margin: 0;
   font-family: Roboto;

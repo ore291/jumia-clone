@@ -10,7 +10,8 @@ import Footer from "./components/Footer.vue"
 <script>
 export default {
   async created() {
-     await this.$store.dispatch('fetchProducts')}
+     await this.$store.dispatch('fetchProducts')
+     }
       
 };
 </script>

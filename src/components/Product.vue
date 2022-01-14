@@ -5,8 +5,8 @@
         <img class="object-contain h-32 sm:h-40 " :src="product.image" :alt="product.title">
     </div >
     <div class="flex flex-col  text-sm w-full tracking-wide align-middle ml-3 pr-4 leading-4">
-        <p class="truncate ...">{{product.title}}</p >
-        <span class="text-lg font-medium truncate ..."><del>&#8358;</del>{{Intl.NumberFormat('en-US').format(product.price * 413)}}</span >
+        <p class="truncate">{{product.title}}</p >
+        <span class="text-lg font-medium truncate"><del>&#8358;</del>{{Intl.NumberFormat('en-US').format(product.price * 413)}}</span >
         <span class="text-xs font-light line-through"><del>&#8358;</del>1200</span >
 <ul class="flex justify-start " >
   <li v-for="index in Math.round(product.rating.rate)"  :key='index'>
