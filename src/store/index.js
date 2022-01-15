@@ -32,7 +32,10 @@ const store = createStore({
   },
   getters: {
    randomProducts :(state) =>(state.products.sort(() => Math.random() - Math.random()).slice(0, 6)),
-   latestProducts: (state) => state.products.slice(3,9)
+   latestProducts: (state) => state.products.slice(3,9),
+   getProduct: (state) => (id) => {
+     return state.products.find(product => product.id === id)
+   }
   },
 });
 

@@ -1,12 +1,13 @@
-import ProductDetails from './ProductDetails.vue'
+
 import Main from '../components/Main.vue';
 import {createRouter, createWebHistory } from 'vue-router'
 // 2. Define some routes
 // Each route should map to a component.
 // We'll talk about nested routes later.
+const ProductDetails = () => import('../pages/ProductDetails.vue')
 const routes = [
     { path: '/', component: Main },
-    { path: '/product/:productTitle', component: ProductDetails },
+    { path: '/product/:productID', component: ProductDetails, props: true, name:'product'},
   ]
   
   // 3. Create the router instance and pass the `routes` option
