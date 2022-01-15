@@ -1,8 +1,10 @@
 <template>
   <nav
-    class="sticky top-0 z-50 sm:h-20 pb-2 sm:pb-0 bg-white sm:shadow-sm flex flex-wrap  sm:flex-nowrap items-center justify-between px-2 pt-2 sm:pt-0 sm:p-0"
+    class="sticky top-0 z-50 sm:h-20 pb-2 sm:pb-0 bg-white sm:shadow-sm flex flex-wrap sm:flex-nowrap items-center justify-between px-2 pt-2 sm:pt-0 sm:p-0"
   >
-    <div class="logo w-2/12 ml-2 mr-48 py-2 sm:py-0 sm:mr-0 sm:ml-24 flex items-center justify-between sm:justify-start">
+    <div
+      class="logo w-2/12 ml-2 mr-48 py-2 sm:py-0 sm:mr-0 sm:ml-24 flex items-center justify-between sm:justify-start"
+    >
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,13 +21,16 @@
           />
         </svg>
       </div>
-      <img
-        class="object-contain w-28 sm:w-32 h-12 cursor-pointer max-w-md"
-        src="../assets/jumia-seeklogo.com.svg"
-        alt=""
-      />
+      <router-link to="/">
+        <img
+          class="object-contain w-28 sm:w-32 h-12 cursor-pointer max-w-md"
+          src="../assets/jumia-seeklogo.com.svg"
+          alt=""
+        />
+      </router-link>
+
       <div class="icons sm:hidden flex ml-28">
-      <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-8 mr-4 stroke-1"
           fill="none"
@@ -39,25 +44,27 @@
             d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
           />
         </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 stroke-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-          />
-        </svg>
+        <router-link :to="{ name: 'cart' }"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 stroke-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+        </router-link>
+      </div>
     </div>
-    </div>
-    
+
     <div
-      class="w-5/12 h-9 sm:h-10 border border-gray-400 sm:rounded-sm rounded-full flex items-center grow  mx-0.75 py-1 px-2 flex-row sm:mr-1"
+      class="w-5/12 h-9 sm:h-10 border border-gray-400 sm:rounded-sm rounded-full flex items-center grow mx-0.75 py-1 px-2 flex-row sm:mr-1"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -150,23 +157,25 @@
           />
         </svg>
       </div>
-      <div class="flex cursor-pointer group items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 group-hover:stroke-orng"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-          />
-        </svg>
-        <span class="mx-1 font-medium group-hover:text-orng">Cart</span>
-      </div>
+      <router-link :to="{ name: 'cart' }">
+        <div class="flex cursor-pointer group items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 group-hover:stroke-orng"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+          <span class="mx-1 font-medium group-hover:text-orng">Cart</span>
+        </div>
+      </router-link>
     </div>
   </nav>
 </template>

@@ -17,10 +17,10 @@ export default {
 
 <template>
   <div class="bg-neutral-100 ">
-      <Header v-if="$route.name !== 'product'"/>
+      <Header v-if="$route.name === 'home'"/>
       <Nav class="sticky top-0 z-50" />
     <router-view> </router-view >
-    <Footer v-if="$route.name !== 'product'"/>
+    <Footer v-if="$route.name === 'home'"/>
   </div>
 </template>
 
