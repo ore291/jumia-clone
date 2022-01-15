@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 h-full ">
+  <div class="pt-2 sm:mt-16 sm:pb-24 pb-5 h-full ">
   <!-- Breadcrumbs -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center space-x-2 text-gray-400 text-sm">
@@ -20,13 +20,13 @@
   </div>
   <!-- ./ Breadcrumbs -->
   <section class="text-gray-600 body-font overflow-hidden  ">
-  <div class="container px-5 py-10 mx-auto ">
+  <div class="container px-5 py-5  ">
     <div class="lg:w-4/5 mx-auto flex flex-wrap ">
-      <div class="bg-white rounded lg:w-2/5 w-full lg:h-auto h-64 px-3 flex items-center justify-center">
-        <img alt="ecommerce" class=" object-fill object-center my-2 " :src="product.image">
+      <div class="bg-white rounded lg:w-2/5 w-full p-14 sm:p-5 flex items-center justify-center">
+        <img alt="ecommerce" class="object-contain sm:object-fill object-center mt-1 mb-2 " :src="product.image">
       </div >
-      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 ">
-        <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
+      <div class="lg:w-3/5  p-3 lg:py-6 mt-1 lg:mt-0 ">
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">{{product.category}}</h2>
         <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{product.title}}</h1>
         <div class="flex mb-4">
           <span class="flex items-center">
